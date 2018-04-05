@@ -1,4 +1,0 @@
-INSERT INTO `trucking`.`detailsusers` (`name`, `surname`, `phoneNumber`, `address`, `users_id`, `cities_id`) VALUES ('Dima', 'Ivanov', '+375296549874', 'Bogdanovicha street, 20-65', '1', '1');
-INSERT INTO `trucking`.`detailsusers` (`name`, `surname`, `phoneNumber`, `address`, `users_id`, `cities_id`) VALUES ('Ivan', 'Sidorov', '+375443214569', 'Lenina street, 11-78', '2', '2');
-INSERT INTO `trucking`.`detailsusers` (`name`, `surname`, `phoneNumber`, `address`, `users_id`, `cities_id`) VALUES ('Sasha', 'Petrov', '+375336547896', 'Kolasa street, 4-58', '3', '3');
-INSERT INTO `trucking`.`detailsusers` (`name`, `surname`, `phoneNumber`, `address`, `users_id`, `cities_id`) VALUES ('Dasha', 'Sonik', '+375298415263', 'Narodnaya street, 41-98', '4', '4');
