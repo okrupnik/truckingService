@@ -2,32 +2,26 @@ package by.htp.trucking.entity;
 
 public class UserInfo extends User {
 	
-	private int id;
 	private String name;
 	private String surname;
+	private String email;
 	private String phoneNumber;
 	private String address;
-	private int idUser;
-	private int idCity;
+	private String city;
 	
 	public UserInfo() {
-		super();
+		
 	}
 
-	public UserInfo(String name, String surname, String phoneNumber, String address, int idUser, int idCity) {
-		super();
+	public UserInfo(String name, String surname, String email, String phoneNumber, String address, String city) {		
 		this.name = name;
 		this.surname = surname;
+		this.email = email;
 		this.phoneNumber = phoneNumber;
 		this.address = address;
-		this.idUser = idUser;
-		this.idCity = idCity;
+		this.city = city;
 	}
-
-	public int getId() {
-		return id;
-	}
-
+	
 	public String getName() {
 		return name;
 	}
@@ -42,6 +36,14 @@ public class UserInfo extends User {
 
 	public void setSurname(String surname) {
 		this.surname = surname;
+	}	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPhoneNumber() {
@@ -60,20 +62,12 @@ public class UserInfo extends User {
 		this.address = address;
 	}
 
-	public int getIdUser() {
-		return idUser;
+	public String getCity() {
+		return city;
 	}
 
-	public void setIdUser(int idUser) {
-		this.idUser = idUser;
-	}
-
-	public int getIdCity() {
-		return idCity;
-	}
-
-	public void setIdCity(int idCity) {
-		this.idCity = idCity;
+	public void setCity(String city) {
+		this.city = city;
 	}
 	
 	

@@ -30,12 +30,8 @@ public class Controller extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		
-		String commandName = request.getParameter(COMMAND_PARAM_NAME);
-
-		Command command = commandProvider.getCommand(commandName);
-		command.execute(request, response);
+			throws ServletException, IOException {		
+		doGet(request, response);
 	}
 
 }

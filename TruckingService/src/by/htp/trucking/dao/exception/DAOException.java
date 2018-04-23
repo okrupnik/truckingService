@@ -1,7 +1,8 @@
 package by.htp.trucking.dao.exception;
 
 public class DAOException extends Exception {
-	
+	private static final long serialVersionUID = -4209618863989526199L;
+
 	public DAOException() {
         super();
     }

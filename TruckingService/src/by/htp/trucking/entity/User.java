@@ -1,29 +1,27 @@
 package by.htp.trucking.entity;
 
 public class User {
-	public static final String STATUS_ACTIVE = "T";
-	public static final String STATUS_NOT_ACTIVE = "F";
 	
-	private int id;
 	private String login;
 	private String password;
 	private String status;
-	private int role;
+	private String role;
 	
 	public User() {
-		super();
+		
 	}
 
-	public User(String login, String password, String status, int role) {
-		super();
-		this.login = login;
-		this.password = password;
+	public User(String login, String status, String role) {
+		this.login = login;		
 		this.status = status;
 		this.role = role;
 	}
 
-	public int getId() {
-		return id;
+	public User(String login, String password, String status, String role) {
+		this.login = login;
+		this.password = password;
+		this.status = status;
+		this.role = role;
 	}
 
 	public String getLogin() {
@@ -50,11 +48,11 @@ public class User {
 		this.status = status;
 	}
 
-	public int getRole() {
+	public String getRole() {
 		return role;
 	}
 
-	public void setRole(int role) {
+	public void setRole(String role) {
 		this.role = role;
 	}
 
@@ -63,8 +61,7 @@ public class User {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((login == null) ? 0 : login.hashCode());
-		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + role;
+		result = prime * result + ((role == null) ? 0 : role.hashCode());
 		result = prime * result + ((status == null) ? 0 : status.hashCode());
 		return result;
 	}
@@ -83,12 +80,10 @@ public class User {
 				return false;
 		} else if (!login.equals(other.login))
 			return false;
-		if (password == null) {
-			if (other.password != null)
+		if (role == null) {
+			if (other.role != null)
 				return false;
-		} else if (!password.equals(other.password))
-			return false;
-		if (role != other.role)
+		} else if (!role.equals(other.role))
 			return false;
 		if (status == null) {
 			if (other.status != null)
@@ -97,6 +92,5 @@ public class User {
 			return false;
 		return true;
 	}
-
 	
 }

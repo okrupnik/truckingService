@@ -1,4 +1,4 @@
-package by.htp.trucking.dao.impl;
+package by.htp.trucking.dao.myconnectionpool;
 
 import java.sql.Array;
 import java.sql.Blob;

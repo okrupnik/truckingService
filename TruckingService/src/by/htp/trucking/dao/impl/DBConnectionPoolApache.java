@@ -13,16 +13,16 @@ import org.apache.logging.log4j.Logger;
 
 
 
-public class DBConnectionPool {
-	private static final Logger log = LogManager.getLogger(UserDAOImpl.class.getName());
-	private static DBConnectionPool instance = null;	
+public class DBConnectionPoolApache {
+	private static final Logger log = LogManager.getLogger(SQLUserDAO.class.getName());
+	private static DBConnectionPoolApache instance = null;	
 	
-	private DBConnectionPool() {		
+	private DBConnectionPoolApache() {		
 	}
 
-	public static DBConnectionPool getInstance() {
+	public static DBConnectionPoolApache getInstance() {
 		if (instance == null) {
-			instance = new DBConnectionPool();
+			instance = new DBConnectionPoolApache();
 		}
 		return instance;
 	}

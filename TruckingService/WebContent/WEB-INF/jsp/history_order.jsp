@@ -4,10 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Create Account</title>
+<title>History Orders</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css" type="text/css" />
 </head>
 <body>
-
+	<jsp:include page="_header.jsp"></jsp:include>
+	<div id="wrapper" class="contentbg">
+		<div id="sidebar">
+			<jsp:include page="_menuauthorizationuser.jsp"></jsp:include>
+		</div>
+		<jsp:include page="_centralContentHistoryOrder.jsp"></jsp:include>		
+	</div>
+	<jsp:include page="_footer.jsp"></jsp:include>
 </body>
 </html>

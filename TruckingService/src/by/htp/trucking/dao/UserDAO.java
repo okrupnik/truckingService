@@ -6,7 +6,9 @@ import by.htp.trucking.entity.UserInfo;
 
 public interface UserDAO {
 	
-	boolean create(User user, UserInfo userInfo) throws DAOException;
-	User logination(String login, String password) throws DAOException;
-	void edit(UserInfo userInfo) throws DAOException;
+	User create(User user, UserInfo userInfo) throws DAOException;
+	User checkUser(String login, String password) throws DAOException;
+	User checkLoginUser(String login) throws DAOException;
+	UserInfo getuserInfo(String login) throws DAOException;
+	boolean edit(User user, UserInfo userInfo) throws DAOException;
 }

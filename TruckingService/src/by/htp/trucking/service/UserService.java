@@ -6,7 +6,9 @@ import by.htp.trucking.entity.UserInfo;
 import by.htp.trucking.service.exception.ServiceException;
 
 public interface UserService {
-	boolean create(User user, UserInfo userInfo) throws ServiceException;
-	User logination(String login, String password) throws ServiceException;
-	void edit(UserInfo userInfo) throws ServiceException;
+	User create(User user, UserInfo userInfo, String locale) throws ServiceException;
+	User logination(String login, String password, String locale) throws ServiceException;
+	User checkLoginUser(String login) throws ServiceException;
+	UserInfo getuserInfo(String login) throws ServiceException;
+	boolean edit(User user, UserInfo userInfo, String locale) throws ServiceException;
 }

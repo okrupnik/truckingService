@@ -1,7 +1,8 @@
 package by.htp.trucking.service.exception;
 
-public class ServiceException extends Exception {
-	
+public class ServiceException extends Exception {	
+	private static final long serialVersionUID = 1528751752451255980L;
+
 	public ServiceException() {
         super();
     }
